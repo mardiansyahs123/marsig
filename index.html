@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="img/resume.png" />
+    <title>Welcome Visitors</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: #fff;
+      }
+
+      .preloader .loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font: 14px arial;
+      }
+
+      .loader {
+        width: 192px;
+        height: 192px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .loader div {
+        background: #225db0;
+        width: 10px;
+        height: 10px;
+        transform-origin: 50% 100%;
+        position: absolute;
+        top: calc(50% - 0.5em);
+        left: calc(50% - 0.25em);
+      }
+      .loader div:nth-child(1) {
+        transform: rotate(0deg) translateY(-5.5em);
+        animation: dot1 8s linear infinite;
+      }
+      .loader div:nth-child(2) {
+        transform: rotate(30deg) translateY(-5.5em);
+        animation: dot2 8s linear infinite;
+      }
+      .loader div:nth-child(3) {
+        transform: rotate(60deg) translateY(-5.5em);
+        animation: dot3 8s linear infinite;
+      }
+      .loader div:nth-child(4) {
+        transform: rotate(90deg) translateY(-5.5em);
+        animation: dot4 8s linear infinite;
+      }
+      .loader div:nth-child(5) {
+        transform: rotate(120deg) translateY(-5.5em);
+        animation: dot5 8s linear infinite;
+      }
+      .loader div:nth-child(6) {
+        transform: rotate(150deg) translateY(-5.5em);
+        animation: dot6 8s linear infinite;
+      }
+      .loader div:nth-child(7) {
+        transform: rotate(180deg) translateY(-5.5em);
+        animation: dot7 8s linear infinite;
+      }
+      .loader div:nth-child(8) {
+        transform: rotate(210deg) translateY(-5.5em);
+        animation: dot8 8s linear infinite;
+      }
+      .loader div:nth-child(9) {
+        transform: rotate(240deg) translateY(-5.5em);
+        animation: dot9 8s linear infinite;
+      }
+      .loader div:nth-child(10) {
+        transform: rotate(270deg) translateY(-5.5em);
+        animation: dot10 8s linear infinite;
+      }
+      .loader div:nth-child(11) {
+        transform: rotate(300deg) translateY(-5.5em);
+        animation: dot11 8s linear infinite;
+      }
+      .loader div:nth-child(12) {
+        transform: rotate(330deg) translateY(-5.5em);
+        animation: dot12 8s linear infinite;
+      }
+      @keyframes dot1 {
+        0% {
+          transform: rotate(0deg) translateY(-5.5em);
+        }
+        4.16667% {
+          transform: rotate(30deg) translateY(0em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(0em);
+        }
+        95.8333% {
+          transform: rotate(690deg) translateY(0em);
+        }
+        100% {
+          transform: rotate(690deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot2 {
+        0%,
+        4.16667% {
+          transform: rotate(30deg) translateY(-5.5em);
+        }
+        8.33333% {
+          transform: rotate(60deg) translateY(-0.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-0.5em);
+        }
+        91.6667% {
+          transform: rotate(660deg) translateY(-0.5em);
+        }
+        95.8333%,
+        100% {
+          transform: rotate(660deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot3 {
+        0%,
+        8.33333% {
+          transform: rotate(60deg) translateY(-5.5em);
+        }
+        12.5% {
+          transform: rotate(90deg) translateY(-1em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-1em);
+        }
+        87.5% {
+          transform: rotate(630deg) translateY(-1em);
+        }
+        91.6667%,
+        100% {
+          transform: rotate(630deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot4 {
+        0%,
+        12.5% {
+          transform: rotate(90deg) translateY(-5.5em);
+        }
+        16.6667% {
+          transform: rotate(120deg) translateY(-1.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-1.5em);
+        }
+        83.3333% {
+          transform: rotate(600deg) translateY(-1.5em);
+        }
+        87.5%,
+        100% {
+          transform: rotate(600deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot5 {
+        0%,
+        16.6667% {
+          transform: rotate(120deg) translateY(-5.5em);
+        }
+        20.8333% {
+          transform: rotate(150deg) translateY(-2em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-2em);
+        }
+        79.1667% {
+          transform: rotate(570deg) translateY(-2em);
+        }
+        83.3333%,
+        100% {
+          transform: rotate(570deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot6 {
+        0%,
+        20.8333% {
+          transform: rotate(150deg) translateY(-5.5em);
+        }
+        25% {
+          transform: rotate(180deg) translateY(-2.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-2.5em);
+        }
+        75% {
+          transform: rotate(540deg) translateY(-2.5em);
+        }
+        79.1667%,
+        100% {
+          transform: rotate(540deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot7 {
+        0%,
+        25% {
+          transform: rotate(180deg) translateY(-5.5em);
+        }
+        29.1667% {
+          transform: rotate(210deg) translateY(-3em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-3em);
+        }
+        70.8333% {
+          transform: rotate(510deg) translateY(-3em);
+        }
+        75%,
+        100% {
+          transform: rotate(510deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot8 {
+        0%,
+        29.1667% {
+          transform: rotate(210deg) translateY(-5.5em);
+        }
+        33.3333% {
+          transform: rotate(240deg) translateY(-3.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-3.5em);
+        }
+        66.6667% {
+          transform: rotate(480deg) translateY(-3.5em);
+        }
+        70.8333%,
+        100% {
+          transform: rotate(480deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot9 {
+        0%,
+        33.3333% {
+          transform: rotate(240deg) translateY(-5.5em);
+        }
+        37.5% {
+          transform: rotate(270deg) translateY(-4em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-4em);
+        }
+        62.5% {
+          transform: rotate(450deg) translateY(-4em);
+        }
+        66.6667%,
+        100% {
+          transform: rotate(450deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot10 {
+        0%,
+        37.5% {
+          transform: rotate(270deg) translateY(-5.5em);
+        }
+        41.6667% {
+          transform: rotate(300deg) translateY(-4.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-4.5em);
+        }
+        58.3333% {
+          transform: rotate(420deg) translateY(-4.5em);
+        }
+        62.5%,
+        100% {
+          transform: rotate(420deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot11 {
+        0%,
+        41.6667% {
+          transform: rotate(300deg) translateY(-5.5em);
+        }
+        45.8333% {
+          transform: rotate(330deg) translateY(-5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-5em);
+        }
+        54.1667% {
+          transform: rotate(390deg) translateY(-5em);
+        }
+        58.3333%,
+        100% {
+          transform: rotate(390deg) translateY(-5.5em);
+        }
+      }
+      @keyframes dot12 {
+        0%,
+        45.8333% {
+          transform: rotate(330deg) translateY(-5.5em);
+        }
+        50% {
+          transform: rotate(360deg) translateY(-5.5em);
+        }
+        54.1667%,
+        100% {
+          transform: rotate(360deg) translateY(-5.5em);
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    
+    <!--================ Start Header Area =================-->
+    <header class="header_area">
+		<div class="preloader">
+			<div class="loading">
+				<div class="loader">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				  </div>
+			</div>
+		  </div>
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="#home"
+              ><img src="img/resume.png" alt="" width="50px"
+            /> &nbsp; MAR<sup>SIG</sup></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#brand">Working Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skill</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================ End Header Area =================-->
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area" id="home">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="banner_content">
+                <h3 class="text-uppercase">Hai</h3>
+                <h1 class="text-uppercase">I am Sigit Mardiansyah</h1>
+                <h5 class="text-uppercase">Web Developer and Mobile Developer</h5>
+                <div class="d-flex align-items-center">
+                  <a class="primary_btn" href="#"><span>Hire Me</span></a>
+                  <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home_right_img">
+                <img class="" src="img/banner/home-right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
+
+    <!--================ Start About Us Area =================-->
+    <section class="about_area section_gap" id="about">
+      <div class="container">
+        <div class="row justify-content-start align-items-center">
+          <div class="col-lg-5">
+            <div class="about_img">
+              <img class="" src="img/about-us.png" alt="" />
+            </div>
+          </div>
+
+          <div class="offset-lg-1 col-lg-5">
+            <div class="main_title text-left">
+              <h2>
+                let’s <br />
+                Introduce about <br />
+                myself
+              </h2>
+              <p>
+              Lulusan S1 Ilmu Komputer Universitas Mercu Buana Jurusan Teknik Informatika. 
+              Memiliki berbagai pengalaman seperti pengalaman magang di PT. Quadran Inovasi Karya Bersama selama 4 bulan sebagai IT Teknisi,
+              pengalaman menjadi Assistan Lab Komputer untuk mata kuliah Pemograman Web, Pemograman Android dan Konfigurasi Jaringan dan Multi Server selama 6 bulan,
+              dan pengalaman berkerja di PT. Sinde Budi Sentosa selama 6 bulan sebagai System Developer. 
+              </p>
+              <p>
+              Saya adalah pribadi yang bertanggung jawab serta memiliki keinginan untuk berkembang, senang untuk belajar hal baru,
+              cepat untuk memahami suatu hal, cepat beradaptasi dengan lingkungan, menganalisis suatu masalah dan bisa berkerja sebagai tim dan individu.
+              </p>
+              <a class="primary_btn" href="#"><span>Download CV</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End About Us Area =================-->
+
+    <!--================ Srart Brand Area =================-->
+    <section class="brand_area section_gap_bottom" id="brand">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="main_title text-center">
+                  <h2 class="text-center">
+                   Working Experience
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-brand-item d-table">
+                  <div class="d-table-cell text-center">
+                    <img src="img/brands/1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-brand-item d-table">
+                  <div class="d-table-cell text-center">
+                    <img src="img/brands/2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-brand-item d-table">
+                  <div class="d-table-cell text-center">
+                    <img src="img/brands/3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="offset-lg-2 col-lg-4 col-md-6">
+            <div class="client-info">
+              <div class="d-flex mb-50">
+              <span class="lage">3</span>
+                <span class="smll">Experience Working Places</span>
+              </div>
+              <div class="call-now d-flex">
+                <div>
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="ml-15">
+                  <p>Contact me</p>
+                  <h3>081213925602</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Brand Area =================-->
+
+    <!--================ Start Features Area =================-->
+    <section class="features_area" id="skill">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="main_title">
+              <h2>My Skill</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row feature_inner">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/coding.png" alt="" />
+              <h4>Web Developer</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/development.png" alt="" />
+              <h4>Mobile Developer</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/analysis.png" alt="" />
+              <h4>Problem Analysis</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/learning.png" alt="" />
+              <h4>Fast Learning</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row feature_inner">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/student.png" alt="" />
+              <h4>Happy to Learn New Things</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/brainstorm.png" alt="" />
+              <h4>Can Work as a Team or Individually</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/adaptation.png" alt="" />
+              <h4>Quick Adapt</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/services/goal.png" alt="" />
+              <h4>Desire to Grow</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Features Area =================-->
+
+    <!--================Start Portfolio Area =================-->
+    <section class="portfolio_area" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title text-left">
+              <h2 class="text-center">
+               Project
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="filters portfolio-filter">
+          <ul>
+            <li class="active" data-filter="*">all</li>
+            <li data-filter=".popular">Mobile</li>
+            <li data-filter=".latest">Web</li>
+          </ul>
+        </div>
+
+        <div class="filters-content">
+          <div class="row portfolio-grid justify-content-center">
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/pus.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/pus.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">Aplikasi PUSPES</a></h4>
+                  <p>Web, Portofolio</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all popular">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/resah.jpg"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/resah.jpg" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">App Pemesanan Makanan (PEMAK)</a></h4>
+                  <p>Android Mobile, Portfolio</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/apk.jpg"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/apk.jpg" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">Aplikasi Pemilihan Ketua RT / RW</a></h4>
+                  <p>Web, Portfolio</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/kayu.jpg"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/kayu.jpg" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">Aplikasi Donatur Kayu Limbah (Kayunich)</a></h4>
+                  <p>Web, Portfolio</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/pkpu.jpg"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/pkpu.jpg" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">Aplikasi PKPU PT. Aerofood Indonesia</a></h4>
+                  <p>Web, Portfolio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Portfolio Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="footer_top flex-column">
+              <div class="footer_social">
+                <a href="https://www.facebook.com/mardiansyah.sigit/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/SGM_002"><i class="fa fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/sigit-mardiansyaah"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer_bottom justify-content-center">
+          <p class="col-lg-8 col-sm-12 footer-text">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      $(document).ready(function() {
+          $(".preloader").delay(3000).fadeOut();
+      })
+  </script>
+  <script>
+      $('.nav-item').on('click', function() {
+  
+          //Remove any previous active classes
+          $('.nav-item').removeClass('active');
+  
+          //Add active class to the clicked item
+          $(this).addClass('active');
+      });
+  </script>
+  </body>
+</html>
